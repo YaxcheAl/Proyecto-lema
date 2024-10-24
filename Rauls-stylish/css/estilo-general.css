@@ -10,12 +10,34 @@ header{
     color: aliceblue;
     padding: 5px 10px 50px 10px;
 }
+/*Estilo para el logo*/
 img#logo{
     float: left;
+    height: auto;/*Para Mantener su proporción original*/
 }
+.logo-container{
+    width: 100%;/*El contenedor ocupa todo el ancho disponible*/
+    max-width: 150px;/*Máximo ancho*/
+}
+/*Estilo para pantallas pequeñas (foto logo)*/
+@media (max-width:600px) {
+    img#logo{
+        width: 80%;
+        float:none; /*Evita que flote en pantalals pequeñas*/
+        display:block;
+        margin: auto;
+    }
+}
+@media (max-width: 601px) {
+    img#logo{
+        width: 150px;
+        float: left;
+    }
+}
+
 /*Estilo barra de navegación*/
 .nav-encabezado{
-    background-color: rgb(122, 96, 81);
+    background-color: rgb(122, 96, 81); /*color barra de navegación*/
     text-align: end;
     padding: 30.5px;
 }
@@ -24,12 +46,12 @@ img#logo{
     padding: 0;
     margin: 0;
 }
-.nav-encabezado > ul {
-    display: inline-flex;
+.nav-encabezado > ul {/*Este > nos dice que solamente se modificará aquellos elemntos que están directamente denttro de la class nav-encabezado, las listas anidadas dentro de las ul no se verán afectadas*/
+    display:flex;
     justify-content: space-around;/*esto sirve para espaciar los elementos de forma equitativa*/
 }
 .nav-encabezado li {
-    position: relative;
+    position: relative;/*Con esto sonsigo que la lista anidada se quede justo debajo de la lista principal*/
 }
 .nav-encabezado a {
     color: black;
@@ -42,9 +64,12 @@ img#logo{
     background-color: rgb(217, 200, 182);/*color cuando pasas el raton por encima*/
 }
 p.botones-encabezado{
-    margin: none;
+    margin: 0;
     padding: 10px 50px 10px 50px;
     background-color: rgb(122, 96, 81);
+}
+.nav-encabezado p:hover{
+    background-color: #555;
 }
 /*Estilo para las listas anidadas*/
 .nav-encabezado ul ul{
@@ -52,7 +77,7 @@ p.botones-encabezado{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: aqua;
+    background-color: rgb(219, 157, 121);
     min-width: 200px;
 }
 .nav-encabezado ul ul li {
@@ -66,4 +91,13 @@ p.botones-encabezado{
 }
 .centro-nav{
     text-align: center;
+}
+/*Estilo para ajustar los dispositivos (nav-encabezado) */
+@media (max-width:600px){
+    .nav-encabezado > ul {
+        flex-direction: column;/*Para colocar los elementos uno abajo del otro en pantallas pequeñas*/
+    }
+    .nav-encabezado ul ul {
+        text-align: left;
+    }
 }
