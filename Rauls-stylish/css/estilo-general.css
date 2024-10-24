@@ -101,3 +101,14 @@ p.botones-encabezado{
         text-align: left;
     }
 }
+
+/*Estilo contenedor fotos d ela pagina principas*/
+.fotosprincipales-contenedor img{
+   
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    left: -10%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
