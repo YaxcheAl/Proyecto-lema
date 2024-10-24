@@ -1,26 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 html{
     background-color:beige;
 }
 header{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
     color: aliceblue;
-    background-image: url(../imagenes/foto_ropa_portada.jpg);
     padding: 5px 10px 50px 10px;
+}
+img#logo{
+    float: left;
 }
 /*Estilo barra de navegación*/
 .nav-encabezado{
     background-color: rgb(122, 96, 81);
-    padding: 0;
-    margin: 0;
+    text-align: end;
+    padding: 30.5px;
 }
 .nav-encabezado ul {
     list-style-type: none;
-    padding: ;
+    padding: 0;
     margin: 0;
 }
 .nav-encabezado > ul {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;/*esto sirve para espaciar los elementos de forma equitativa*/
 }
 .nav-encabezado li {
@@ -35,6 +40,11 @@ header{
 }
 .nav-encabezado a:hover{ 
     background-color: rgb(217, 200, 182);/*color cuando pasas el raton por encima*/
+}
+p.botones-encabezado{
+    margin: none;
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(122, 96, 81);
 }
 /*Estilo para las listas anidadas*/
 .nav-encabezado ul ul{
@@ -53,4 +63,7 @@ header{
 }
 .nav-encabezado li:hover > ul {
     display: block;
+}
+.centro-nav{
+    text-align: center;
 }
