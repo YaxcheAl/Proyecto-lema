@@ -8,11 +8,49 @@ header{
     background-image: url(../imagenes/foto_ropa_portada.jpg);
     padding: 5px 10px 50px 10px;
 }
+/*Estilo barra de navegación*/
 .nav-encabezado{
     background-color: rgb(122, 96, 81);
-    padding: 10px 30px 10px 30px;
+    padding: 0;
+    margin: 0;
 }
-nav ul li a{
-    display: inline;
-    
+.nav-encabezado ul {
+    list-style-type: none;
+    padding: ;
+    margin: 0;
+}
+.nav-encabezado > ul {
+    display: flex;
+    justify-content: space-around;/*esto sirve para espaciar los elementos de forma equitativa*/
+}
+.nav-encabezado li {
+    position: relative;
+}
+.nav-encabezado a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;/*Margen interior*/
+    background-color: rgb(122, 96, 81);
+}
+.nav-encabezado a:hover{ 
+    background-color: rgb(217, 200, 182);/*color cuando pasas el raton por encima*/
+}
+/*Estilo para las listas anidadas*/
+.nav-encabezado ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aqua;
+    min-width: 200px;
+}
+.nav-encabezado ul ul li {
+    width: 100%;
+}
+.nav-encabezado ul ul a:hover {
+    background-color: #555;
+}
+.nav-encabezado li:hover > ul {
+    display: block;
 }
