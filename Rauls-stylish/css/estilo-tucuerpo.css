@@ -93,7 +93,6 @@ p.botones-encabezado{
 .centro-nav{
     text-align: center;
 }
-
 /*Estilo para ajustar los dispositivos (nav-encabezado) */
 @media (max-width:600px){
     .nav-encabezado > ul {
@@ -103,48 +102,3 @@ p.botones-encabezado{
         text-align: left;
     }
 }
-/*estilo general para la tabla encabezado*/
-table {
-    margin: auto;
-    width: 80%;
-    border-collapse: collapse;/*colapsa los bordes adyacentes*/
-}
-.encabezado-tabla h2 {
-    margin: 30px;
-    font-size: 1.5em;
-    text-align: center;
-    color: #333;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /*Agreda una sombra*/
-}
-/*estilo cuerpo tabla*/
-.cuerpo-tabla-fotos td {
-    text-align: center;
-    padding: 10px;
-}
-/*estilo para las imagen dentro de la tabla encabezado*/
-.cuerpo-tabla-fotos img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /*Agreda una sombra*/   
-}
-
-
-/*estilo para pantallas pequeñas*/
-@media (max-width: 600px) {
-    .tabla-fotos {
-        width: 95%;/*aumenta el ancho*/
-    }
-    .encabezado-tabla h2 {
-        font-size: 1.2em;
-        
-    }
-    .cuerpo-tabla-fotos td {
-        padding: 5px;/*reduce el espaciointerno*/
-    }
-}
-
-
-
-
