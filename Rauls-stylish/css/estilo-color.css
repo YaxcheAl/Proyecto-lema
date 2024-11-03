@@ -102,3 +102,20 @@ p.botones-encabezado{
         text-align: left;
     }
 }
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+div#color-luz {
+    float: left;
+    margin-left: 14em;
+    
+}
+div#color-pigmento {
+    float: right;
+    margin-right: 14em;
+}
