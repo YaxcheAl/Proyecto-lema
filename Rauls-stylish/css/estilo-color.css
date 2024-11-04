@@ -102,6 +102,14 @@ p.botones-encabezado{
         text-align: left;
     }
 }
+#nav-sections {
+    list-style:disc;
+    margin-left: 32em;
+}
+#nav-sections a {
+    text-decoration: none;
+    color: rgb(122, 96, 81);
+}
 h1{
     text-align: center;
     font-weight: bold;
@@ -112,13 +120,66 @@ h2{
 }
 div#color-luz {
     float: left;
-    margin-left: 14em;
+    margin-left: 10em;
     
 }
 div#color-pigmento {
     float: right;
-    margin-right: 14em;
+    margin-right: 10em;
 }
-#circulo-cromatico {
-    margin-left: 22em;
+
+section {
+    text-align: center;
+}
+div.normal {
+    background-color: rgb(122, 96, 81);
+    margin:40px;
+}
+
+ul#ul1 {
+    text-align: start;
+    margin-left: 30em;
+}
+ul#ul2 {
+    text-align: start;
+    margin-left: 10em;
+}
+ul#ul2 a {
+    margin-left: 40px;
+}
+ul#ul2 a#colores-primarios {
+    margin-left: 10em;
+}
+ul#ul3 {
+    text-align: start;
+    margin-left: 30em;
+}
+ul#ul4 {
+    text-align: start;
+    margin-left: 12em;
+}
+ul#ul5 {
+    text-align: start;
+    margin-left: 20em;
+}
+ul#ul6 {
+    text-align: start;
+    margin-left: 15em;
+}
+ul#ul6 img{
+    margin-left: 15em;
+}
+div#Gama-1 {
+    float: left;
+    margin-left: 12em;
+}
+div#Gama-2 {
+    float: right;
+    margin-right: 12em;
+}
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
