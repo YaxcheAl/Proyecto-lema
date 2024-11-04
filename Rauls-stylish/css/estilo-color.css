@@ -105,6 +105,13 @@ p.botones-encabezado{
 #nav-sections {
     list-style:disc;
     margin-left: 32em;
+    color: black;
+}
+h2#index{
+    color: black;
+}
+#nav-sections ul {
+    color: black;
 }
 #nav-sections a {
     text-decoration: none;
@@ -182,4 +189,7 @@ img#subir {
     position: fixed;
     right: 20px;
     bottom: 20px;
+}
+p, h2, ul, h3 {
+    color: beige;
 }
