@@ -1,0 +1,121 @@
+* estilo-general.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-contenedor img {
+    max-width: 100px;
+}
+
+.nav-encabezado ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-encabezado ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-encabezado ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #4a90e2;
+    padding: 10px;
+    border-radius: 5px;
+    top: 30px;
+}
+
+.nav-encabezado ul li:hover ul {
+    display: block;
+}
+
+.botones-encabezado, .enlaces-nav {
+    color: #fff;
+    text-decoration: none;
+}
+
+.article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado-estilo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+.encabezado-estilo p {
+    margin-bottom: 10px;
+}
+
+.destaque-contenedor {
+    background-color: #ffedcc;
+    padding: 10px;
+    border-left: 5px solid #ffa500;
+    margin: 20px 0;
+}
+
+ul {
+    margin: 15px 0;
+}
+
+ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin: 8px 0;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+    background-color: #357ab8;
+}
