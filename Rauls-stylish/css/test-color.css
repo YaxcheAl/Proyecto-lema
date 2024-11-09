@@ -13,6 +13,25 @@ div {
     background-color: rgb(122, 96, 81);
     margin:40px;
 }
-p, h2, ul, h3 {
+p, h2, ul, h3, ol {
     color: beige;
+}
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#nav-sections {
+    list-style:disc;
+    margin-left: 32em;
+    color: black;
+}
+#nav-sections ul {
+    color: black;
+}
+#nav-sections a {
+    text-decoration: none;
+    color: rgb(122, 96, 81);
 }
