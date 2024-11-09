@@ -1,0 +1,11 @@
+.formulario {
+    background-color: rgb(122, 96, 81);
+    margin:40px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 10px;
+}
+form {
+    text-align: center;
+    color: aliceblue;
+}

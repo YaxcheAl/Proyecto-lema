@@ -64,10 +64,13 @@ img#logo{
 .nav-encabezado a:hover{ 
     background-color: rgb(217, 200, 182);/*color cuando pasas el raton por encima*/
 }
-p.botones-encabezado{
+.botones-encabezado{
     margin: 0;
     padding: 10px 50px 10px 50px;
     background-color: rgb(122, 96, 81);
+}
+a.botones-encabezado {
+    color: aliceblue;
 }
 .nav-encabezado p:hover{
     background-color: #555;

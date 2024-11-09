@@ -33,6 +33,31 @@
                         <li class="centro-nav"><a href="test-estilo.html" class="enlaces-nav">Test Estilo</a></li>
                     </ul>
                 </li>
+                <li><a href="contacto.html" class="botones-encabezado">contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    <form action="https://lorategi.site/formulario.php" method="post" enctype="multipart/form-data">
+        <div class="formulario">
+            <label for="nombre">Nombre y Apellidos: </label>
+            <input type="text" name="nombre" id="nombre" size="50" maxlength="60" placeholder="Nombre y Apellidos" required>
+        </div>
+        <div class="formulario"> 
+            <label for="email">Email:*</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo: nombre@gmail.com" required>
+        </div>
+        <div class="formulario">
+            <label for="telefono">Teléfono: </label>
+            <input type="tel" name="telefono" id="telefono" placeholder="telefono" size="50" pattern="[0-9]{9}" minlength="9" maxlength="9">
+        </div>
+        <div class="formulario">
+            <p><label for="comentarios">¿Tienes algun comentario o sugerencia para decirnos?</label></p>
+            <textarea cols="60" rows="10" name="comentario" id="comentarios"></textarea>
+        </div>
+        <div class="formulario">
+            <input type="submit" value="Guardar cambios">
+            <input type="reset" value="Borrar los datos introducidos">
+        </div>
+    </form>
+</body>
