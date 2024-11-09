@@ -1,9 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+     
 }
 
 /* Estilo del artículo principal */
@@ -81,8 +79,9 @@ ul.listas .negrita {
 
 /* Estilo para enlaces */
 a {
-    color: #3498db;
+    color: #a73f07;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
