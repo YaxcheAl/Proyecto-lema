@@ -1,121 +1,208 @@
-* estilo-general.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
+/* Estilo general del artículo */
+article {
+    font-family: 'Arial', sans-serif;  /* Establece una tipografía legible para todo el artículo */
+    color: #333;  /* Color del texto principal en un tono gris oscuro */
+    line-height: 1.6;  /* Espaciado entre líneas para mejorar la legibilidad */
+    padding: 20px;  /* Espaciado alrededor del contenido del artículo */
+    background-color: rgb(251, 241, 232);  /* Fondo */
+    max-width: 1200px;  /* Ancho máximo del artículo para evitar que se extienda demasiado en pantallas grandes */
+    margin: 0 auto;  /* Centra el artículo en la página */
 }
 
-body {
-    background-color: #f3f4f6;
-    color: #333;
-    line-height: 1.6;
+/* Estilos para el encabezado principal (primera sección con el fondo de imagen) */
+.encabezado-test {
+    background-image: url(../imagenes/foto-test-de-estilo.jpg.webp);  /* Ruta de la imagen de fondo */
+    background-size: cover;  /* Hace que la imagen cubra todo el fondo sin distorsionarse */
+    background-position: center;  /* Centra la imagen de fondo */
+    color: white;  /* Color del texto blanco para que destaque sobre el fondo oscuro */
+    padding: 50px;  /* Espaciado interno para que el texto no esté pegado al borde */
+    text-align: center;  /* Centra todo el texto dentro del encabezado */
+    border-radius: 10px;  /* Bordes redondeados para suavizar el contorno */
+    margin-bottom: 30px;  /* Espaciado inferior para separar del siguiente contenido */
+    
 }
 
-header {
-    background-color: #4a90e2;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
+.encabezado-test h1 {
+    font-size: 36px;  /* Tamaño grande para los encabezados */
+    margin-bottom: 15px;  /* Espacio inferior entre los encabezados */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Sombra de texto para mejorar la legibilidad sobre el fondo */
 }
 
-.logo-contenedor img {
-    max-width: 100px;
+.encabezado-test p {
+    font-size: 18px;  /* Tamaño de texto adecuado para los párrafos */
+    margin-bottom: 10px;  /* Espacio entre los párrafos */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);  /* Sombra para el texto */
 }
 
-.nav-encabezado ul {
-    list-style-type: none;
-    padding: 0;
+/* Estilos para los párrafos en el resto del contenido */
+div p {
+    font-size: 18px;  /* Tamaño de texto más pequeño */
+    color: #555;  /* Color gris oscuro para los párrafos */
+    margin-bottom: 20px;  /* Espaciado inferior para separar párrafos */
 }
 
-.nav-encabezado ul li {
-    display: inline-block;
-    position: relative;
-    margin-right: 20px;
+/* Estilos para las listas de ítems */
+.lista ul {
+    list-style-type: none;  /* Elimina las viñetas de la lista */
+    padding: 0;  /* Elimina el padding predeterminado de las listas */
 }
 
-.nav-encabezado ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #4a90e2;
-    padding: 10px;
-    border-radius: 5px;
-    top: 30px;
+.lista ul li {
+    background-color: rgb(217, 187, 163);  /* Fondo gris claro para cada ítem */
+    padding: 10px;  /* Espaciado interno en cada ítem */
+    margin: 5px 0;  /* Espaciado entre ítems */
+    border-radius: 5px;  /* Bordes redondeados para suavizar el aspecto de los ítems */
+    margin-bottom: 30px;  /* Espaciado inferior para separar del siguiente contenido */
 }
 
-.nav-encabezado ul li:hover ul {
-    display: block;
-}
-
-.botones-encabezado, .enlaces-nav {
-    color: #fff;
-    text-decoration: none;
-}
-
-.article {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.encabezado-estilo h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #4a90e2;
-}
-
-.encabezado-estilo p {
-    margin-bottom: 10px;
-}
-
+/* Estilo para el contenedor de texto destacado */
 .destaque-contenedor {
-    background-color: #ffedcc;
-    padding: 10px;
-    border-left: 5px solid #ffa500;
-    margin: 20px 0;
+    background-color: #f9f9f9;  /* Fondo gris muy claro para la sección */
+    padding: 20px;  /* Espaciado interno */
+    border-left: 5px solid rgb(121, 88, 73);  /* Borde izquierdo de color x para resaltar la sección */
+    margin-bottom: 30px;  /* Separación del contenido siguiente */
 }
 
-ul {
-    margin: 15px 0;
+/* Estilos para las imágenes dentro de la sección .img */
+.img img {
+    max-width: 100%;  /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;  /* Mantiene las proporciones de la imagen */
+    display: block;  /* Asegura que la imagen se trate como un bloque y se ajuste bien */
+    margin: 20px 0;  /* Espaciado superior e inferior de la imagen */
 }
 
-ul li {
-    margin-left: 20px;
-    list-style-type: disc;
+/* Estilo para el botón de "Empezar Test" */
+.boton-empezar {
+    text-align: center;  /* Centra el texto dentro del contenedor del botón */
+    background-color: rgb(121, 88, 73);  /* Fondo naranja para el botón */
+    color: white;  /* Texto blanco */
+    padding: 15px;  /* Espaciado interno */
+    border-radius: 5px;  /* Bordes redondeados */
+    cursor: pointer;  /* Cambia el cursor para indicar que es un botón clickeable */
+    margin-bottom: 30px;  /* Espaciado inferior */
 }
 
-form fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 8px;
+.boton-empezar p {
+    font-size: 20px;  /* Tamaño grande para el texto del botón */
+    margin: 0;  /* Elimina márgenes para que el texto esté perfectamente centrado */
+    color: white;
 }
 
-form fieldset legend {
-    font-weight: bold;
-    color: #333;
+/* Estilo para el formulario */
+form {
+    background-color: #fff;  /* Fondo blanco para el formulario */
+    padding: 20px;  /* Espaciado interno */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor del formulario */
+    margin-bottom: 30px;  /* Espaciado inferior */
 }
 
-form label {
-    display: block;
-    margin: 8px 0;
+/* Estilos para los títulos (leyendas) de los campos del formulario */
+legend {
+    font-size: 22px;  /* Tamaño grande para el título de cada pregunta */
+    margin-bottom: 10px;  /* Espacio debajo del título */
+    color: #333;  /* Color del texto */
 }
 
-form button[type="submit"],
-form button[type="reset"] {
-    padding: 10px 20px;
-    background-color: #4a90e2;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+fieldset {
+    border: 1px solid #ddd;  /* Borde gris suave para cada bloque de preguntas */
+    padding: 20px;  /* Espaciado interno */
+    margin-bottom: 20px;  /* Espacio entre cada conjunto de preguntas */
+    border-radius: 8px;  /* Bordes redondeados */
 }
 
-form button[type="submit"]:hover,
-form button[type="reset"]:hover {
-    background-color: #357ab8;
+fieldset img {
+    width: 100%;  /* Las imágenes se ajustan al contenedor */
+    max-width: 300px;  /* Tamaño máximo de las imágenes */
+    margin-bottom: 15px;  /* Espaciado inferior de las imágenes */
 }
+
+/* Estilos para las opciones de los checkboxes */
+label {
+    display: block;  /* Hace que cada opción ocupe su propio bloque */
+    font-size: 16px;  /* Tamaño de fuente adecuado para las opciones */
+    margin-bottom: 10px;  /* Espaciado inferior para separar las opciones */
+    cursor: pointer;  /* Cambia el cursor a puntero para indicar que se puede clicar */
+}
+
+
+.checkbox-container {
+    display: flex; /* Usamos flexbox para alinear bien el checkbox con el texto */
+    align-items: center; /* Alinea verticalmente el contenido */
+    cursor: pointer; /* Cambia el cursor a puntero cuando se pasa por encima */
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;  /* Ancho del checkbox */
+    height: 20px;  /* Alto del checkbox */
+    margin-right: 10px;  /* Espacio entre el checkbox y el texto */
+}
+
+.checkbox-container span {
+    font-size: 16px;
+    padding-left: 5px; /* Espacio entre el texto y el checkbox (opcional) */
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #4caf50; /* Cambia el color de fondo cuando se selecciona */
+}
+
+/* Estilo para los botones dentro del formulario */
+button {
+    background-color: rgb(121, 88, 73);  /* Fondo marrón para el botón de "Ver Resultado" */
+    color: white;  /* Texto blanco */
+    padding: 12px 25px;  /* Espaciado dentro del botón */
+    border: none;  /* Elimina el borde predeterminado */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-size: 16px;  /* Tamaño de fuente adecuado */
+    cursor: pointer;  /* Cambia el cursor a puntero */
+    margin-top: 10px;  /* Espaciado superior */
+    transition: background-color 0.3s ease;  /* Efecto suave al pasar el cursor */
+}
+
+/* Estilo para el botón de reset */
+button[type="reset"] {
+    background-color: #c23442;  /* Fondo rojo para el botón de reset */
+}
+
+/* Efectos de hover sobre los botones */
+button:hover {
+    background-color: rgb(100, 71, 57);  /* Cambia el fondo a marrón más oscuro al pasar el ratón */
+}
+
+button[type="reset"]:hover {
+    background-color: #cd7780;  /* Cambia el fondo a rojo más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    article {
+        padding: 15px;  /* Menos espaciado en pantallas pequeñas */
+    }
+
+    .encabezado-test h1 {
+        font-size: 28px;  /* Reduce el tamaño de los títulos en pantallas pequeñas */
+    }
+
+    .encabezado-test p {
+        font-size: 16px;  /* Reduce el tamaño de los párrafos */
+    }
+
+    .destaque-contenedor {
+        padding: 15px;  /* Reduce el espaciado en la sección destacada */
+    }
+
+    .img img {
+        max-width: 100%;  /* Las imágenes ocupan el 100% del ancho disponible */
+    }
+
+    form {
+        padding: 15px;  /* Reduce el espaciado dentro del formulario */
+    }
+
+    button {
+        width: 100%;  /* Los botones ocupan todo el ancho disponible en pantallas pequeñas */
+        padding: 15px
+    }}
