@@ -1,8 +1,15 @@
 /* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color:beige;
+}
+header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    padding: 5px 10px 50px 10px;
 }
 
 body {
@@ -178,4 +185,223 @@ button:hover {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Estilos generales para el artículo fondo de armario */
+article.fondo-armario {
+    
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 60px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilos para el título principal */
+.fondo-armario h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Listas dentro del artículo */
+.fondo-armario ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fondo-armario li {
+    margin-bottom: 20px;
+}
+
+/* Estilo para los títulos de los items (h3) */
+.fondo-armario h3 {
+    font-size: 1.5em;
+    color: #2980b9;
+
+}
+
+/* Remover decoración en los h3 con clase .sin-decoracion */
+.sin-decoracion {
+    text-decoration: none;
+}
+
+/* Estilo para las tablas */
+.tabla table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Estilo para las celdas de las tablas y las imágenes */
+.tabla td {
+    text-align: center;
+    padding: 10px;
+}
+
+.tabla img.imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tabla img.imagen:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para las listas dentro de cada sección */
+.fondo-armario li ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fondo-armario li li {
+    margin-bottom: 8px;
+}
+
+/* Fondo de las listas */
+.fondo-armario ul li ul {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Sección de complementos */
+.fondo-armario li:last-child {
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces si los hubiera */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de espaciado y márgenes */
+.fondo-armario h2, .fondo-armario h3, .fondo-armario ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Estilo de las imágenes al lado de los textos */
+.tabla {
+    margin-bottom: 40px;
+}
+
+/* Estilos específicos de texto de los ítems */
+.fondo-armario li li {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Espaciado entre las secciones */
+.fondo-armario > .texto {
+    margin-top: 30px;
+}
+
+/* Estilo para la sección de "tabla" con imágenes */
+.tabla td {
+    width: 33%;
+    padding: 10px;
+}
+
+/* Medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Reducir el tamaño del título principal en pantallas pequeñas */
+    .fondo-armario h2 {
+        font-size: 2em;
+    }
+
+    /* Reducir el tamaño de los títulos de los items */
+    .fondo-armario h3 {
+        font-size: 1.2em;
+    }
+
+    /* Ajustar márgenes y espaciado */
+    .fondo-armario ul, .fondo-armario li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* Ajustar la presentación de las imágenes */
+    .tabla td {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .tabla img.imagen {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Hacer que las listas dentro de cada sección se apilen mejor */
+    .fondo-armario li ul {
+        padding-left: 10px;
+    }
+
+    /* Reducir el tamaño de las celdas de las tablas */
+    .tabla td {
+        padding: 5px;
+    }
+}
+
+/* Medios para pantallas muy pequeñas (dispositivos móviles en modo retrato) */
+@media (max-width: 480px) {
+    /* Título principal más pequeño */
+    .fondo-armario h2 {
+        font-size: 1.5em;
+    }
+
+    /* Títulos de los ítems aún más pequeños */
+    .fondo-armario h3 {
+        font-size: 1.1em;
+    }
+
+    /* Ajustar el espaciado entre las listas */
+    .fondo-armario ul, .fondo-armario li {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    /* Ajustar la tabla para que las imágenes sean apiladas */
+    .tabla td {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Asegurarse de que las imágenes no se desborden */
+    .tabla img.imagen {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Ajustar márgenes y espaciados para pantallas más pequeñas */
+    .fondo-armario > .texto {
+        margin-top: 20px;
+    }
+}
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
 }

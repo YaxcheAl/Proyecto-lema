@@ -1,0 +1,43 @@
+/* Estilo general del cuerpo */
+
+article{
+    font-family: 'Arial', sans-serif;  /* Establece una tipografía legible para todo el artículo */
+    color: #333;  /* Color del texto principal en un tono gris oscuro */
+    line-height: 1.6;  /* Espaciado entre líneas para mejorar la legibilidad */
+    padding: 20px;  /* Espaciado alrededor del contenido del artículo */
+    background-color: white;  /* Fondo */
+    max-width: 1200px;  /* Ancho máximo del artículo para evitar que se extienda demasiado en pantallas grandes */
+    margin: 0 auto;
+}
+.entrada h1 {
+    text-align: center;
+    color: rgb(130, 9, 9);
+    padding: 20px;
+}
+.entrada h2 {
+    text-align: center;
+    color: brown;
+    padding: 5px;
+}
+.entrada p{
+    text-align: justify;
+    padding: 3px;
+
+}
+.negrita {
+    
+    font-weight: bold;
+    color: #333;
+
+}
+
+footer{
+    padding: 60px 0px 30px 0px ;
+}
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+}

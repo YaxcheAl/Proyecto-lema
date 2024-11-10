@@ -89,3 +89,10 @@ img#subir {
 p, h2, ul, h3 {
     color: beige;
 }
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+}

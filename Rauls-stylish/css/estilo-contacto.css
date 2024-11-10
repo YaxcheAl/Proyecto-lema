@@ -9,3 +9,10 @@ form {
     text-align: center;
     color: aliceblue;
 }
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+}

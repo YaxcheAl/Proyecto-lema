@@ -150,6 +150,13 @@ table {
         padding: 5px;/*reduce el espacio*/
     }
 }
+img#subir {
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+}
 
 
 
