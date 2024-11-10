@@ -75,6 +75,9 @@ a.botones-encabezado {
 .nav-encabezado p:hover{
     background-color: #555;
 }
+.destacar-nav {
+    border-bottom: #333;
+}
 /*Estilo para las listas anidadas*/
 .nav-encabezado ul ul{
     display: none; /*Esto es lo que hace que las ñistas anidadas solo se vean pasar el ratón por encima*/

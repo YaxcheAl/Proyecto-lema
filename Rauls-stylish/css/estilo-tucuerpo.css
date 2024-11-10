@@ -15,7 +15,7 @@ article {
 }
 
 /* Estilo para aumentar el margen entre cada div */
-div {
+article div {
     margin-bottom: 20px; /* Ajusta este valor según la distancia que desees */
 }
 
@@ -57,7 +57,7 @@ h3 {
     text-align: justify;
 }
 
-/* Estilo para listas */
+/* Estilo para listas desordenadas*/
 ul.listas {
     margin: 15px 0;
     padding-left: 20px;
@@ -68,6 +68,17 @@ ul.listas li {
 }
 
 ul.listas .negrita {
+    font-weight: bold;
+}
+/*Estilo para listas ordenadas*/
+ol.lista-ordenada{
+    margin: 15px 0;
+    padding-left: 20px;
+}
+ul.listas li {
+    margin-bottom: 10px;
+}
+.listas .negrita {
     font-weight: bold;
 }
 

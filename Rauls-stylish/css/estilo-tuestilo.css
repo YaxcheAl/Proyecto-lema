@@ -1,130 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilo básico para el body */
 body {
-    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 /* Estilo del artículo principal */
 article {
-    max-width: 900px; /* Ancho máximo del artículo */
-    margin: 40px auto; /* Centramos el artículo y damos espacio superior/inferior */
-    padding: 60px; /* Espacio dentro del artículo */
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-div{
+
+/* Responsive */
+@media (max-width: 768px) {
+    article {
+        padding: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .lista-ordenada h2 {
+        font-size: 1.5em;
+    }
+    .lista-ordenada h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Pequeñas pantallas (teléfonos) */
+@media (max-width: 480px) {
+    article {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .lista-ordenada h2 {
+        font-size: 1.4em;
+    }
+    .lista-ordenada h3 {
+        font-size: 1em;
+    }
+    .texto p, .lista-ordenada li {
+        font-size: 0.9em;
+    }
+}
+
+article div {
     margin: 40px;
 }
 
-/* Estilo para el encabezado principal */
 h1 {
-    font-size: 2.5em; /* Tamaño grande para el título principal */
-    color: #333; /* Color oscuro para buen contraste */
-    text-align: center; /* Centrado */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Estilo para las imágenes dentro del artículo */
 .imagen img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    border-radius: 8px; /* Bordes redondeados para las imágenes */
-    display: block; /* Asegura que las imágenes se alineen como bloques */
-    margin: 20px auto; /* Centra las imágenes y agrega un margen */
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Estilo para el texto principal dentro de 'texto' */
 .texto p {
-    color: #555; /* Color gris oscuro para el texto */
-    margin-bottom: 20px; /* Espacio entre párrafos */
-    text-align: justify; /* Alinea el texto a ambos márgenes */
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
-/* Estilo para la clase "negrita" */
 .negrita {
-    font-weight: bold; /* Negrita */
-    color: #333; /* Color oscuro para destacar */
+    font-weight: bold;
+    color: #333;
 }
 
-/* Estilo para las listas ordenadas */
-.lista-ordenada {
-    margin-left: 20px; /* Márgenes a la izquierda para indentar las listas */
-    padding-left: 20px; /* Espaciado a la izquierda */
-    list-style-type: decimal; /* Estilo de lista numerada */
-    
-}
-
-/* Espaciado entre elementos de la lista */
-.lista-ordenada li {
-    margin-bottom: 30px; /* Espacio entre los ítems */
-}
-
-/* Estilo para los subtítulos dentro de la lista */
-.lista-ordenada h2 {
-    font-size: 1.8em; /* Tamaño de fuente más pequeño para los subtítulos */
-    margin-bottom: 10px; /* Espacio debajo del título */
-    color: #333; /* Color oscuro para los subtítulos */
-}
-
-/* Estilo para los subtítulos de nivel 3 dentro de las listas */
-.lista-ordenada h3 {
-    font-size: 1.4em; /* Tamaño de fuente más pequeño que el de los h2 */
-    margin-top: 10px; /* Espacio por encima */
-    color: #666; /* Color gris para los subtítulos de nivel 3 */
-}
-
-/* Estilo para los enlaces */
-a {
-    color: #a73f07; /* Color naranja distintivo para los enlaces */
-    text-decoration: none; /* Elimina el subrayado predeterminado */
-    font-weight: bold; /* Enlaces en negrita para destacarlos */
-}
-
-/* Estilo para los enlaces cuando el mouse pasa sobre ellos */
-a:hover {
-    text-decoration: underline; /* Subraya el enlace cuando se pasa el ratón por encima */
-}
-
-/* Estilo para las imágenes dentro de las listas */
-.lista-ordenada img {
-    max-width: 100%; /* Asegura que las imágenes no se desborden */
-    border-radius: 8px; /* Bordes redondeados */
-    margin-top: 20px; /* Espacio por encima de las imágenes */
-}
-
-/* Agregar estilo a los enlaces de las imágenes */
-.lista-ordenada a {
-    color: #a73f07; /* Color naranja para los enlaces dentro de las listas */
-    text-decoration: none; /* Sin subrayado por defecto */
-    font-weight: normal; /* Sin negrita en enlaces dentro de listas */
-}
-
-.lista-ordenada a:hover {
-    text-decoration: underline; /* Subrayado cuando se pasa el ratón por encima */
-}
-
-/* Estilo general para las imágenes dentro de las listas */
-.lista-ordenada img {
-    border-radius: 8px; /* Bordes redondeados */
-    margin-top: 20px; /* Espacio por encima */
-}
-
-/* Ajustes de márgenes y padding para el artículo */
-article {
-    margin-top: 30px; /* Espacio superior */
-    margin-bottom: 30px; /* Espacio inferior */
-    padding: 20px; /* Relleno dentro del artículo */
-}
-/* Estilo para las listas ordenadas */
 .lista-ordenada {
     margin-left: 20px;
     padding-left: 20px;
     list-style-type: decimal;
 }
 
-/* Estilo para los números dentro de la lista */
+.lista-ordenada li {
+    margin-bottom: 30px;
+}
+
+.lista-ordenada h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lista-ordenada h3 {
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: #666;
+}
+
+div ol li a {
+    color: #a73f07;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article .lista-ordenada img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+article .lista-ordenada a {
+    color: #a73f07;
+    font-weight: bold;
+}
+
+.lista-ordenada a:hover {
+    text-decoration: underline;
+}
+
+.lista-ordenada img {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
 .lista-ordenada li::marker {
-    font-size: 1.6em; /* Aumenta el tamaño de los números */
-    font-weight: bold; /* Opcional: hace los números en negrita */
-    color: #333; /* Color del número */
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
 }
