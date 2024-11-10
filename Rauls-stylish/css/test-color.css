@@ -9,7 +9,7 @@ h2{
 section {
     text-align: center;
 }
-article div {
+div section {
     background-color: rgb(122, 96, 81);
     margin:40px;
     border-radius: 10px;
