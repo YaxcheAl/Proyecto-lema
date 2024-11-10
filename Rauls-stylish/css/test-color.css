@@ -9,9 +9,11 @@ h2{
 section {
     text-align: center;
 }
-div {
+article div {
     background-color: rgb(122, 96, 81);
     margin:40px;
+    border-radius: 10px;
+    padding: 40px 20px;
 }
 p, h2, ul, h3, ol {
     color: beige;
