@@ -1,0 +1,181 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo del artículo principal */
+article {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para encabezados */
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-top: 20px;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #666;
+}
+/* Texto */
+
+.texto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+/* Imágenes */
+.imagen-principal img,
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.imagen-principal {
+    text-align: center;
+}
+/* Listas ordenadas */
+.lista-ordenada {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.lista-ordenada li {
+    margin-bottom: 40px;
+}
+
+.lista-ordenada h3 {
+    font-size: 1.75rem;
+}
+
+.lista-ordenada img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.lista-ordenada li p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.lista-ordenada li a {
+    color: var(--color-secundario);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Tablas */
+.tabla {
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darken(var(--color-secundario), 10%);
+}
+
+/* Estilos para los botones */
+button {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darken(var(--color-secundario), 10%);
+}
+
+/* Estilos para responsividad */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .texto p {
+        font-size: 1rem;
+    }
+
+    .imagen-principal,
+    .imagen {
+        text-align: center;
+    }
+
+    .imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+}
